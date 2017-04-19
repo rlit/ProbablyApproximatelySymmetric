@@ -24,7 +24,7 @@ end
 times.tsdf = toc(tStart);
 %% roi mask
 switch params.roiMaskType
-    case 'shpere'
+    case 'sphere'
         idx = 1:numel(I1);
         [Ys,Xs,Zs] = ind2sub(size(I1),idx');
         maxDim = size(I1,1);
@@ -49,7 +49,7 @@ switch params.roiMaskType
         roiMask = dists < rad;
         roiMask = roiMask & (Img>0); % the intersection
     otherwise
-        error('bad roiMakType');
+        error('bad roiMaskType');
 end
 
 %% determine search limits and initial grid

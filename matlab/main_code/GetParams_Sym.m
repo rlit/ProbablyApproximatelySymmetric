@@ -26,7 +26,7 @@ p = AddField(p,'doVisualization',true);
 
 p = AddField(p,'roiMaskType','interiorAndSphereIntersect'); % not 'interior' any more
 % p = AddField(p,'roiMaskType','interior');
-% p = AddField(p,'roiMaskType','shpere');
+% p = AddField(p,'roiMaskType','sphere');
 
 p = AddField(p,'K',0);% use 0 for Binary
 p = AddField(p,'maxNumberOfBestSymmetries',4);
