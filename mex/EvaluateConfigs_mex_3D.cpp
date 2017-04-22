@@ -99,9 +99,9 @@ void mexFunction(int nlhs, mxArray *plhs[],
 	valsI1 = (double *)malloc(numPoints*sizeof(double));
         
     /* Store target pixel locations - x and y */
-    double* xs_target = (double *)malloc(numPoints*sizeof(double));
-	double* ys_target = (double *)malloc(numPoints*sizeof(double));
-	double* zs_target = (double *)malloc(numPoints*sizeof(double));
+    //double* xs_target = (double *)malloc(numPoints*sizeof(double));
+	//double* ys_target = (double *)malloc(numPoints*sizeof(double));
+	//double* zs_target = (double *)malloc(numPoints*sizeof(double));
             
 
 	/* Retrieve the input data */

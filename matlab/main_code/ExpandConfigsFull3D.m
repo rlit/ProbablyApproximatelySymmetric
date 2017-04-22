@@ -14,7 +14,7 @@ expandedConfigs = ExpandSingleConfig(configs,steps,bounds,stepFactor);
 %% bound expansions to valid limits
 expandedConfigs(:,1) = BoundBy(expandedConfigs(:,1),bounds.tx(1),bounds.tx(2));
 expandedConfigs(:,2) = BoundBy(expandedConfigs(:,2),bounds.ty(1),bounds.ty(2));
-expandedConfigs(:,3) = BoundBy(expandedConfigs(:,3),bounds.tz(1),bounds.tz(1));
+expandedConfigs(:,3) = BoundBy(expandedConfigs(:,3),bounds.tz(1),bounds.tz(2));
 % expandedConfigs(:,4) = BoundBy(expandedConfigs(:,4),bounds.s);
 expandedConfigs(:,5) = BoundBy(expandedConfigs(:,5),0,pi);%lat
 expandedConfigs(:,6) = BoundBy(expandedConfigs(:,6),0,2*pi);%lon
